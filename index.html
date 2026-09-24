@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahmad Yaser Omari | Mobile App Developer</title>
+  <meta name="description" content="Portfolio of Ahmad Yaser Omari, mobile and app developer. Graduate of Kardan University, class of 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Ahmad Yaser Omari, back to top">Ahmad Yaser Omari</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+    <nav class="site-nav" id="siteNav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hero-role">Mobile App and Web Developer</p>
+        <h1>Ahmad Yaser Omari builds apps and websites that fit in your pocket.</h1>
+        <p class="hero-lead">
+          I design and develop mobile and web applications. I graduated from Kardan University in 2026 and I am ready to build my next product.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#Projects">See my work</a>
+          <a class="btn btn-ghost" href="#Contact">Get in touch</a>
+        </div>
+      </div>
+
+
+      <div class="phone" aria-label="Interactive app preview">
+        <div class="phone-notch" aria-hidden="true"></div>
+        <div class="phone-screen">
+
+          <div class="screen is-active" id="screen-home" role="tabpanel" aria-labelledby="tab-home">
+            <h2 class="screen-title">Today</h2>
+            <div class="app-card app-card-lead">
+              <span class="app-card-label">Next task</span>
+              <strong>Ship version 1.0</strong>
+              <span class="app-progress"><i style="width:72%"></i></span>
+            </div>
+            <div class="app-row"><span class="dot dot-a"></span>Design the home screen</div>
+            <div class="app-row"><span class="dot dot-b"></span>Connect the API</div>
+            <div class="app-row"><span class="dot dot-c"></span>Test on real devices</div>
+          </div>
+
+          <div class="screen" id="screen-search" role="tabpanel" aria-labelledby="tab-search" hidden>
+            <h2 class="screen-title">Search</h2>
+            <div class="app-search">Find something…</div>
+            <div class="app-chips">
+              <span>Android</span><span>iOS</span><span>Cross-platform</span><span>UI</span>
+            </div>
+            <div class="app-row"><span class="dot dot-a"></span>Fast to open</div>
+            <div class="app-row"><span class="dot dot-b"></span>Simple to use</div>
+          </div>
+
+          <div class="screen" id="screen-profile" role="tabpanel" aria-labelledby="tab-profile" hidden>
+            <h2 class="screen-title">Profile</h2>
+            <div class="app-avatar" aria-hidden="true">AY</div>
+            <p class="app-name">Ahmad Yaser Omari</p>
+            <p class="app-meta">Kardan University, 2026</p>
+            <div class="app-row"><span class="dot dot-c"></span>Mobile app development</div>
+          </div>
+
+        </div>
+        <div class="phone-tabs" role="tablist" aria-label="App screens">
+          <button role="tab" id="tab-home" aria-selected="true" aria-controls="screen-home" data-screen="home">Home</button>
+          <button role="tab" id="tab-search" aria-selected="false" aria-controls="screen-search" data-screen="search" tabindex="-1">Search</button>
+          <button role="tab" id="tab-profile" aria-selected="false" aria-controls="screen-profile" data-screen="profile" tabindex="-1">Profile</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <h2 class="section-title">About me</h2>
+      <div class="about-grid">
+        <p>
+          My name is Ahmad Yaser Omari. I am a Computer Science graduate with a passion for software development and technology. I have experience in web and mobile application development, database management, and programming.
+        </p>
+        <p>
+       I enjoy learning new technologies, solving problems, and building practical software solutions. I am always looking for opportunities to improve my skills and gain experience in the field of computer science.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="section section-tint" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills" id="skillsList"></div>
+    </section>
+
+
+    <section class="section" id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects" id="projectList"></div>
+    </section>
+
+    <!-- Education -->
+    <section class="section section-tint" id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="edu">
+        <p class="edu-year">2026</p>
+        <div>
+          <h3>Kardan University</h3>
+          <p>Graduated in 2026.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <h2 class="section-title">Let's build something</h2>
+      <p class="contact-lead">Have an app idea or a role to fill? Send me a message.</p>
+      <div class="contact-links" id="contactLinks"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Ahmad Yaser Omari</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
